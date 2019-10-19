@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #A6F0FB;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  /* padding: 50px 0; */
+  text-align: center;
+  grid-column: 1 / -1;
+  grid-row: 2 / auto;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  grid-column: 1 / -1;
+  grid-row: 4 / auto;
+
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  /*Your code here */
+  display: inline-block;
+  padding-right: 20px;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; /*Your code here - remove the underline*/
+}
+
+nav a:hover{
+  text-decoration: underline; /*Your code here - add the underline*/
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute; /*Your code here - position relative to the parent */
+  top: -40px;      /*Your code here - place 40px higher */
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+/*Your code here*/
+/*Add the selector and rule to move the skip link to the exact top.*/
+.skip a:focus{
+  top: 0px;
+}
+
+/*Your code here*/
+/*Add the selector and code to put a 2px black border around all elements in focus.*/
+*:focus{
+  border: 2px solid black;
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.container{
+  /*Your code here  */
+  display: grid;
+  grid-template-columns: 100px 500px 100px;
+  /*Provided*/
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  width: 100vw;
+  grid-row-gap: 15px;
+}
+
+.nav{
+   /*Your code here */
+  grid-column: 1 / -1;
+  grid-row: 1 / auto;
+  align-self: center;
+  /*Provided*/
+  background-color: #A6F0FB;
+  padding: 20px 0;
+  text-align: left;
+}
+
+header{
+  /* background-attachment: fixed; /* Parallax effect */
+  /* Your code here - Link to header.jpg in the images folder */
+  /* background-image: url('../images/header.jpg'); */
+  background-color: #FFC0CB;
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: navy;
+  height: 200px;                /* Parallax effect */
+  /*Your code here - cover the entire row*/
+  grid-column: 1 / -1;
+  grid-row: 2 / auto;
+}
+
+header p{
+  color: navy;
+  font-size: 36px;
+  /* padding: 0 100px; */
+  text-align: center;
+  /* grid-column: 1 / -1;
+  grid-row: 2 / auto; */
+}
+
+.about-image{
+  /*Your code here */
+  image: url('../images/me.jpg');
+  /* need alt text */
+  grid-column: 1 / -1;
+  grid-row: 5 / auto;
+  max-height: 700px;
+  /* overflow: hidden; */
+  align-self: center;
+  justify-self: center;
+}
+
+.about{
+  /*Your code here - start in the 2nd column*/
+  grid-column: 2 / auto;
+  grid-row: 5 / auto;
+}
+
+.goals{
+  /*Your code here */
+  grid-column: 2 / auto;
+  grid-row: 3 / auto;
+}
+
+/* .method-image{
+  /*Your code here */
+  image: url('../images/method.jpg');
+  /* alt text need */
+  grid-column: 1 / -1;
+  grid-row: 4 / auto;
+  max-height: 700px;
+  overflow: hidden;
+} */
+
+
+/* .clients-image{
+ /*Your code here */
+ image: url('../images/clients.jpg');
+ /* need alt text */
+ grid-column: 1 / -1;
+ grid-row: 5 / auto;
+ max-height: 700px;
+ overflow: hidden;
+} */
+
+/* .clients{
+ /*Your code here */
+ grid-column: 2 / auto;
+ grid-row: 5 / auto;
+} */
+
+/* .contact-image{
+   /*Your code here */
+   image: url('../images/contact.jpg');
+   grid-column: 1 / -1;
+   grid-row: 6 / auto;
+   max-height: 700px;
+   overflow: hidden;
+
+}
+
+/* .contact{
+   /*Your code here */
+   grid-column: 2 / auto;
+   grid-row: 6 / auto;
+} */ */
+
+.text-block{
+  align-self: center;
+  justify-self: center;
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+}
+
+
+
+@media screen and (min-width: 800px) /*Your code here - Add the first media query.*/{
+
+  .container{
+    /*Your code here */
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 200px 300px 200px 200px 200px 100px;
+  }
+
+
+  .nav{
+    background-color: #A6F0FB;
+     /*Your code here */
+     align-self: center;
+     text-align: right;
+     padding: 35px 0;
+     grid-column: 1 / -1;
+     grid-row: 1 / auto;
+  }
+
+  .about-image{
+     /*Your code here */
+     image: url('../images/me.jpg');
+     /* needs alt text */
+     grid-column: 2 / 4;
+     grid-row: 2 / 6;
+     height: auto;
+     max-width: 100%;
+     /* overflow: hidden; */
+     align-self: center;
+     justify-self: center;
+    }
+
+  .about{
+        /*Your code here */
+        grid-column: 2 / auto;
+        grid-row: 3 / auto;
+    }
+
+  img {
+    max-height: 500px;
+    max-width: 100%;
+    }
+
+
+
+  .goals{
+      /*Your code here */
+      grid-column: 2 / auto;
+      grid-row: 5 / auto;
+  }
+
+
+  /* .method-image{
+    /*Your code here */
+    image: url('../images/method.jpg');
+    /* needs alt text */
+    grid-column: 3 / 5;
+    grid-row: 4 / auto;
+    max-height: 700px;
+    overflow: hidden;
+
+  } */
+
+
+
+  /* .clients-image{
+    /*Your code here */
+    image: url('../images/clients.jpg');
+    /* needs alt text */
+    grid-column: 2 / 4;
+    grid-row: 5 / auto;
+    max-height: 700px;
+    overflow: hidden;
+
+  }
+
+  /* .clients{
+    /*Your code here */
+    grid-column: 3 / 5;
+    grid-row: 5 / auto;
+  } */ */
+
+  /* .contact-image{
+    /*Your code here */
+    image: url('../images/contact.jpg');
+    /* needs alt text */
+    grid-column: 3 / 5;
+    grid-row: 6 / auto;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  /* .contact{
+    /*Your code here */
+    grid-column: 2 / 4;
+    grid-row: 6 / auto;
+   } */ */
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none !important; /*  Your code here - set to default setting */
+    transition: none !important; /*  Your code here - set to default setting */
+    z-index: 1;
+    /* google how to turn off animation */
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
