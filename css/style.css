@@ -110,6 +110,10 @@ nav p{
   font-size: 20px;
 }
 
+nav p a{
+  text-decoration: none;
+}
+
 header{
   background-color: #BAF1FB;
   height: 60px;
