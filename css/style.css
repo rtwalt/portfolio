@@ -96,7 +96,7 @@ nav ul{
   display: block;
 }
 
-.drop1 li#homenav, .drop2 li#educnav, .drop3 li#expernav, .drop4 li#gallnav {
+.drop1 li.homenav, .drop2 li.educnav, .drop3 li.expernav, .drop4 li.gallnav {
   background-color: yellow;
   border-color: navy;
 }
@@ -386,7 +386,7 @@ h4{
 
 @media only screen and (min-width: 800px) {
 
-  body.home li#homenav, body.educ li#educnav, body.exper li#expernav, body.gall li#gallnav {
+  body.home li.homenav, body.educ li.educnav, body.exper li.expernav, body.gall li.gallnav {
   background-color: yellow;
   border-color: navy;
 }
@@ -452,7 +452,7 @@ h4{
     display: block;
   }
 
-  .drop1 li#homenav, .drop2 li#educnav, .drop3 li#expernav, .drop4 li#gallnav {
+  .drop1 li.homenav, .drop2 li.educnav, .drop3 li.expernav, .drop4 li.gallnav {
     background-color: yellow;
     border-color: navy;
   }
@@ -629,7 +629,7 @@ h4{
 
 @media only screen and (min-width: 1200px){
 
-  body.home li#homenav, body.educ li#educnav, body.exper li#expernav, body.gall li#gallnav {
+  body.home li.homenav, body.educ li.educnav, body.exper li.expernav, body.gall li.gallnav {
   background-color: yellow;
   border-color: navy;
 }
