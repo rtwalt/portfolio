@@ -302,6 +302,7 @@ h4{
 .lotame p{
   text-align: center;
   padding-bottom: 5px;
+  color: navy;
 }
 
 .lelion {
@@ -577,6 +578,7 @@ h4{
 
   .lotame p{
     text-align: left;
+    color: navy;
   }
 
   .lelion p{
@@ -784,6 +786,7 @@ h4{
 
   .lotame p{
     text-align: left;
+    color: navy;
   }
 
   .lelion p{
